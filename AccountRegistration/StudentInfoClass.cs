@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AccountRegistration
 {
     public delegate long DelegateNumber(long number);
-    public delegate string DelegateName(string txt);
+    public delegate string DelegateText(string txt);
     internal class StudentInfoClass
     {
         public static string FirstName = " ";

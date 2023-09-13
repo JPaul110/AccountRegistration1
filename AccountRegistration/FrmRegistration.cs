@@ -28,6 +28,21 @@ namespace AccountRegistration
             StudentInfoClass.ContactNo = long.Parse(textBox6.Text);
             StudentInfoClass.Address = textBox7.Text.ToString();
 
+            FrmConfirm Frm = new FrmConfirm();
+            DialogResult Result = new DialogResult();
+            Result = Frm.ShowDialog();
+            if (Result == DialogResult.OK)
+            {                
+                textBox1.Text = " ";
+                textBox2.Text = " ";
+                textBox3.Text = " ";
+                textBox4.Text = " ";
+                textBox5.Text = " ";
+                textBox6.Text = " ";
+                textBox7.Text = " ";
+                comboBox1.SelectedIndex = -1;
+            }
+
         }
     }
 }
